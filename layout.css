@@ -209,6 +209,28 @@ section {
 #inbox {
     width: 360px;
 }
+.inbox-search-wrapper {
+    padding: 10px;
+}
+.inbox-search {
+    border: 1px solid #ccc;
+    height: 16px;
+    padding: 10px;
+}
+.inbox-search:focus-within {
+    outline: auto 5px -webkit-focus-ring-color;
+}
+.inbox-search input {
+    border: none;
+    line-height: 16px;
+    width: calc(100% - 16px);
+}
+.inbox-search input:focus {
+    outline: none;
+}
+.inbox-msgs {
+    overflow: scroll;
+}
 .inbox-wrapper {
     border-top: 1px solid #ccc;
     padding: 10px;
