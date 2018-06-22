@@ -1,5 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
     margin: 0;
     padding: 0;
 }
@@ -43,6 +45,12 @@ section {
     align-items: center;
     justify-content: center;
 }
+.notification {
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 #primary-menu {
     width: 100px;
     background: #1D2531;
@@ -69,8 +77,56 @@ section {
     cursor: pointer;
 }
 #side-menu {
-    width: 250px;
+    width: 210px;
     background: #232C3D;
+    color: #b7c0cd;
+    padding: 0 20px;
+    position: relative;
+}
+.side-menu-wrapper {
+    border-top: 1px solid #2f3c50;
+}
+.side-menu-wrapper:first-child {
+    border-top: none;
+}
+.side-menu-title {
+    color: #2d3840;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+.side-menu-title:hover {
+    color: #556d91;
+}
+.side-menu-content {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.side-menu-content:hover,
+.side-menu-content .is-active {
+    color: #fff;
+}
+.side-menu-right-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.side-menu-footer {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+.progress-bar-wrapper {
+    position: relative;
+    padding: 5px;
+}
+.progress-bar-bg,
+.progress-bar-fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 #message-box {
     width: calc(100% - 350px);
