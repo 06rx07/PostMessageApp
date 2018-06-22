@@ -20,6 +20,9 @@ section {
 .vertical-center {
     align-items: center;
 }
+.justify-start {
+    justify-content: flex-start;
+}
 .blue-bg {
     background: #2099f2;
 }
@@ -143,6 +146,13 @@ section {
 .side-menu-content:hover,
 .side-menu-content .is-active {
     color: #fff;
+}
+.side-menu-left-icon {
+    width: 25px;
+    height: 18px;
+}
+.side-menu-left-icon .image-container {
+    justify-content: flex-start;
 }
 .side-menu-right-icon {
     width: 18px;
