@@ -1,6 +1,77 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section {
+    display: inline-block;
+    height: 100vh;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .allcaps {
     text-transform: uppercase;
+}
+.blue-bg {
+    background: #2099f2;
+}
+.blue-bg:hover {
+    background: #87c9f8;
+}
+.purple-bg {
+    background: #8d73e5;
+}
+.purple-bg:hover {
+    background: #b9a9ef;
+}
+.red-bg {
+    background: #e03d22;
+}
+.red-bg:hover {
+    background: #ec8a79;
+}
+.trans-bg {
+    background: transparent;
+    border: 1px solid #2d3848;
+}
+.image-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#primary-menu {
+    width: 100px;
+    background: #1D2531;
+    position: relative;
+}
+#primary-menu .trans-bg:hover,
+.primary-menu-footer-icon:hover {
+    background: #2f3c50;
+}
+.primary-menu-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+.primary-menu-footer {
+    position: absolute;
+    bottom: 0;
+}
+.primary-menu-footer-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+#side-menu {
+    width: 250px;
+    background: #232C3D;
+}
+#message-box {
+    width: calc(100% - 350px);
 }
