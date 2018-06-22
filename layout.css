@@ -17,6 +17,9 @@ section {
 .allcaps {
     text-transform: uppercase;
 }
+.vertical-center {
+    align-items: center;
+}
 .blue-bg {
     background: #2099f2;
 }
@@ -50,6 +53,42 @@ section {
     padding: 1px 8px;
     border-radius: 10px;
     cursor: pointer;
+}
+.title {
+    color: #2d3840;
+    font-weight: 600;
+}
+.header-wrapper .header-avatar,
+.header-wrapper .header-title,
+.header-wrapper .header-option {
+    display: inline-block;
+}
+.header-title {
+    padding: 10px 0;
+}
+.header-avatar {
+    margin-right: 20px;
+}
+.header-avatar-relative {
+    position: relative;
+}
+.header-avatar-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.header-title {
+    vertical-align: top;
+}
+.header-title .is-active {
+    color: #2099f2;
+}
+.header-title-role {
+    color: #ccc;
+    font-weight: 600;
+}
+.header-option {
+    height: 50px;
 }
 #primary-menu {
     width: 100px;
@@ -90,7 +129,6 @@ section {
     border-top: none;
 }
 .side-menu-title {
-    color: #2d3840;
     margin: 10px 0;
     cursor: pointer;
     font-weight: 600;
@@ -130,4 +168,16 @@ section {
 }
 #message-box {
     width: calc(100% - 350px);
+}
+#top-menu {
+    height: 50px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.top-menu-title {
+    font-size: 18px;
+    line-height: 50px;
+}
+#top-menu .header-wrapper {
+    width: 220px;
 }
