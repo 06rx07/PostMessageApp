@@ -57,9 +57,21 @@ section {
     border-radius: 10px;
     cursor: pointer;
 }
+.icon-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
 .title {
     color: #2d3840;
     font-weight: 600;
+}
+.action-btn {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    width: 30px;
+    height: 30px;
 }
 .header-wrapper .header-avatar,
 .header-wrapper .header-title,
@@ -92,6 +104,9 @@ section {
 }
 .header-option {
     height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #556d91;
 }
 #primary-menu {
     width: 100px;
@@ -100,7 +115,7 @@ section {
 }
 #primary-menu .trans-bg:hover,
 .primary-menu-footer-icon:hover {
-    background: #2f3c50;
+    background: #556d91;
 }
 .primary-menu-icon {
     width: 60px;
@@ -136,7 +151,7 @@ section {
     cursor: pointer;
     font-weight: 600;
 }
-.side-menu-title:hover {
+.side-menu-title:hover .title {
     color: #556d91;
 }
 .side-menu-content {
@@ -181,7 +196,7 @@ section {
 }
 #top-menu {
     height: 50px;
-    padding: 10px 20px;
+    padding: 10px;
     border-bottom: 1px solid #ccc;
 }
 .top-menu-title {
@@ -190,4 +205,38 @@ section {
 }
 #top-menu .header-wrapper {
     width: 220px;
+}
+#inbox {
+    width: 360px;
+}
+.inbox-wrapper {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+.inbox-content,
+.detail-msg-content {
+    font-size: 12px;
+}
+#detail {
+    width: calc(100% - 360px);
+    border-left: 1px solid #ccc;
+}
+.detail-title,
+.detail-pagination {
+    line-height: 30px;
+}
+.detail-pagination {
+    font-weight: 600;
+    color: #556d91; 
+}
+.detail-header-wrapper,
+.detail-msg {
+    padding: 10px;
+}
+.detail-header-wrapper {
+    border-bottom: 1px solid #ccc;
+}
+.detail-header-icon-group .action-btn-group,
+.detail-header-icon-group .detail-pagination {
+    display: inline-block;
 }
