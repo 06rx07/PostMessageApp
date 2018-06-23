@@ -71,6 +71,9 @@ body {
     color: #2d3840;
     font-weight: 600;
 }
+.action-btn-group--padding {
+    padding-right: 20px;
+}
 .action-btn {
     background: linear-gradient(#fefefe, #f3f4f8);
     border: 1px solid #ced0da;
@@ -205,9 +208,11 @@ body {
 }
 .side-menu-footer {
     color: #fff;
+    vertical-align: bottom;
+    margin-bottom: 20px;
     position: absolute;
     bottom: 0;
-    margin-bottom: 20px;
+    width: 210px;
 }
 .progress-bar-wrapper {
     position: relative;
@@ -244,6 +249,10 @@ body {
     border-top: 1px solid #ccc;
     padding: 10px;
 }
+.inbox-wrapper.is-active {
+    border-left: 4px solid #2099f2;
+    padding-left: 6px;
+}
 .inbox-content,
 .detail-msg-content {
     font-size: 10px;
@@ -262,6 +271,8 @@ body {
 .detail-pagination {
     font-weight: 600;
     color: #556d91; 
+    padding: 0 20px;
+    border-left: 1px solid #ccc;
 }
 .detail-header-wrapper,
 .detail-msg {
@@ -286,6 +297,21 @@ body {
 .detail-msg-photo-wrapper .image-container {
     padding-right: 10px;
 }
+.detail-msg-photo-add-wrapper {
+    position: relative;
+}
+.detail-msg-add-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 53px;
+}
+.detail-msg-add-icon .image-container {
+    padding-right: 0px;
+}
 .divider {
     margin-top: 9px;
     border-top: 1px solid #a0aab9;
@@ -301,6 +327,10 @@ body {
 }
 .divider-date.is-active {
     color: #2099f2;
+}
+.divider-date-content {
+    margin: 0 40%;
+    background: #fff;
 }
 .detail-msg-sender {
     margin-top: 10px;
