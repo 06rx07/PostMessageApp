@@ -1,13 +1,13 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     margin: 0;
     padding: 0;
 }
-section {
-    display: inline-block;
-    height: 100vh;
+.flex-equal-height {
+    display: flex;
+    width: 100%;
 }
 .flex-container {
     display: flex;
@@ -45,6 +45,9 @@ section {
     background: transparent;
     border: 1px solid #2d3848;
 }
+.green-bg {
+    background: #1bb934;
+}
 .image-container {
     height: 100%;
     display: flex;
@@ -56,6 +59,7 @@ section {
     padding: 1px 8px;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 10px;
 }
 .icon-status {
     width: 8px;
@@ -70,8 +74,8 @@ section {
 .action-btn {
     border: 1px solid #ccc;
     box-shadow: none;
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
 }
 .header-wrapper .header-avatar,
 .header-wrapper .header-title,
@@ -162,6 +166,9 @@ section {
 .side-menu-content .is-active {
     color: #fff;
 }
+.side-menu-content-name {
+    line-height: 16px;
+}
 .side-menu-left-icon {
     width: 25px;
     height: 18px;
@@ -170,8 +177,8 @@ section {
     justify-content: flex-start;
 }
 .side-menu-right-icon {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -207,7 +214,7 @@ section {
     width: 220px;
 }
 #inbox {
-    width: 360px;
+    width: 306px;
 }
 .inbox-search-wrapper {
     padding: 10px;
@@ -237,15 +244,18 @@ section {
 }
 .inbox-content,
 .detail-msg-content {
-    font-size: 12px;
+    font-size: 10px;
 }
 #detail {
-    width: calc(100% - 360px);
+    width: calc(100% - 306px);
     border-left: 1px solid #ccc;
+}
+.detail-header-wrapper {
+    height: 38px;
 }
 .detail-title,
 .detail-pagination {
-    line-height: 30px;
+    line-height: 38px;
 }
 .detail-pagination {
     font-weight: 600;
@@ -261,4 +271,36 @@ section {
 .detail-header-icon-group .action-btn-group,
 .detail-header-icon-group .detail-pagination {
     display: inline-block;
+}
+.detail-msg-header {
+    margin-bottom: 5px;
+}
+.detail-msg-header * {
+    display: inline-block;
+}
+.detail-msg-time {
+    font-weight: 600;
+    color: #a0aab9;
+}
+.detail-msg-photo-wrapper {
+    margin-top: 5px;
+}
+.detail-msg-photo-wrapper .image-container {
+    padding-right: 10px;
+}
+.divider {
+    margin-top: 9px;
+    border-top: 1px solid #a0aab9;
+}
+.divider.is-active {
+    border-top: 1px solid #2099f2;
+}
+.divider-date {
+    text-align: center;
+    color: #a0aab9;
+    height: 18px;
+    margin-top: -9px;
+}
+.divider-date.is-active {
+    color: #2099f2;
 }

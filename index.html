@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="./layout.css" />
     </head>
     <body>
-        <div class="flex-container">
+        <div class="flex-equal-height">
             <section id="primary-menu">
                 <div class="primary-menu-icon blue-bg">
                     <div class="image-container">
@@ -186,10 +186,12 @@
                                     </div>
                                     <div class="header-option">3m</div>
                                 </div>
-                                <div class="inbox-content">
-                                    I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact,
-                                    it's relatively quick, and stable...
-                                    <span class="notification">4</span>
+                                <div class="inbox-content flex-container vertical-center">
+                                    <div>
+                                        I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact,
+                                        it's relatively quick, and stable...
+                                    </div>
+                                    <div class="notification blue-bg">4</div>
                                 </div>
                             </div>
                             <div class="inbox-wrapper">
@@ -314,7 +316,10 @@
                     </div>
                     <div id="detail">
                         <div class="detail-header-wrapper flex-container">
-                            <div class="title detail-title">Bessie Berry</div>
+                            <div class="title detail-title">
+                                Bessie Berry
+                                <div class="icon-status green-bg"></div>
+                            </div>
                             <div class="detail-header-icon-group flex-container">
                                 <div class="action-btn-group">
                                     <button class="action-btn">
@@ -348,11 +353,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="detail-msg">
-                            <div class="detail-msg-avatar berry-avatar"></div>
+                        <div class="detail-msg flex-container">
+                            <div class="header-avatar">
+                                <div class="image-container">
+                                    <img src="./assets/BerryAvatar.png" />
+                                </div>
+                            </div>
                             <div class="detail-msg-wrapper">
                                 <div class="detail-msg-header">
-                                    <div class="detail-msg-title">Bessie Berry</div>
+                                    <div class="title detail-msg-title">Bessie Berry</div>
                                     <div class="detail-msg-time">8:31 AM</div>
                                 </div>
                                 <div class="detail-msg-content">
@@ -362,11 +371,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="detail-msg">
-                            <div class="detail-msg-avatar jackson-avatar"></div>
+                        <div class="detail-msg flex-container">
+                            <div class="header-avatar">
+                                <div class="image-container">
+                                    <img src="./assets/JacksonAvatar.png" />
+                                </div>
+                            </div>
                             <div class="detail-msg-wrapper">
                                 <div class="detail-msg-header">
-                                    <div class="detail-msg-title">Jordan Jackson</div>
+                                    <div class="title detail-msg-title">Jordan Jackson</div>
                                     <div class="detail-msg-time">8:31 AM</div>
                                 </div>
                                 <div class="detail-msg-content">
@@ -383,11 +396,15 @@
                         <div class="divider">
                             <div class="divider-date">Tuesday</div>
                         </div>
-                        <div class="detail-msg">
-                            <div class="detail-msg-avatar berry-avatar"></div>
+                        <div class="detail-msg flex-container">
+                            <div class="header-avatar">
+                                <div class="image-container">
+                                    <img src="./assets/BerryAvatar.png" />
+                                </div>
+                            </div>
                             <div class="detail-msg-wrapper">
                                 <div class="detail-msg-header">
-                                    <div class="detail-msg-title">Bessie Berry</div>
+                                    <div class="title detail-msg-title">Bessie Berry</div>
                                     <div class="detail-msg-time">8:31 AM</div>
                                 </div>
                                 <div class="detail-msg-content">
@@ -396,11 +413,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="detail-msg">
-                            <div class="detail-msg-avatar jackson-avatar"></div>
+                        <div class="detail-msg flex-container">
+                            <div class="header-avatar">
+                                <div class="image-container">
+                                    <img src="./assets/JacksonAvatar.png" />
+                                </div>
+                            </div>
                             <div class="detail-msg-wrapper">
                                 <div class="detail-msg-header">
-                                    <div class="detail-msg-title">Jordan Jackson</div>
+                                    <div class="title detail-msg-title">Jordan Jackson</div>
                                     <div class="detail-msg-time">8:31 AM</div>
                                 </div>
                                 <div class="detail-msg-content">
@@ -410,22 +431,28 @@
                                     because I'm being throttled. When my uploads go over 25KB/sec (note, bytes, not bits), my download speed
                                     suffers. This is expected, as downloads require upload bandwidth as well.
                                 </div>
-                                <div class="photo-container">
-                                    <div class="photo photo1"></div>
-                                    <div class="photo photo2">
-                                        <div class="photo-add-btn"></div>
+                                <div class="detail-msg-photo-wrapper flex-container justify-start">
+                                    <div class="image-container">
+                                        <img src="./assets/TueMsgPhoto1.png" />
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="./assets/TueMsgPhoto2.png" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="divider">
-                            <div class="divider-date">New Messages</div>
+                        <div class="divider is-active">
+                            <div class="divider-date is-active">New Messages</div>
                         </div>
-                        <div class="detail-msg">
-                            <div class="detail-msg-avatar berry-avatar"></div>
+                        <div class="detail-msg flex-container">
+                            <div class="header-avatar">
+                                <div class="image-container">
+                                    <img src="./assets/BerryAvatar.png" />
+                                </div>
+                            </div>
                             <div class="detail-msg-wrapper">
                                 <div class="detail-msg-header">
-                                    <div class="detail-msg-title">Bessie Berry</div>
+                                    <div class="title detail-msg-title">Bessie Berry</div>
                                     <div class="detail-msg-time">8:31 AM</div>
                                 </div>
                                 <div class="detail-msg-content">
